@@ -9,9 +9,11 @@ const MobileMenu = ({ closeMenu }: MobileMenuProps) => {
   };
 
   return (
-    <div className='border p-2 overflow-auto flex flex-col flex-1 justify-center text-2xl uppercase'>
-      <div className='mb-2'>Menu</div>
-      <div className='overflow-x-clip whitespace-nowrap'>{'-'.repeat(200)}</div>
+    <div className='border p-2 py-4 overflow-auto flex flex-col flex-1 justify-start text-2xl uppercase'>
+      <div className='my-2'>Menu</div>
+      <div className='overflow-x-clip whitespace-nowrap text-md'>
+        {'-'.repeat(200)}
+      </div>
       <button
         className='font-light mb-2 flex'
         type='button'
