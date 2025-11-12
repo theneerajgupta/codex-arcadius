@@ -1,8 +1,13 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@import './texture.css';
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --accent: #7f1d1d;
+  --accent-border: #fca5a5;
+  --accent-background: #fff0f0;
 }
 
 @theme inline {
@@ -16,6 +21,9 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --accent: #f87171;
+    --accent-border: #7f1d1d;
+    --accent-background: #2e0404;
   }
 }
 
@@ -23,4 +31,24 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  @apply text-2xl font-bold;
+}
+
+h2 {
+  @apply text-xl font-bold;
+}
+
+h3 {
+  @apply text-lg font-bold;
+}
+
+.border-accent {
+  border-color: var(--accent-border);
+}
+
+.accent-color {
+  color: var(--accent);
 }

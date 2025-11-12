@@ -1,0 +1,33 @@
+.texture-diagonal-1 {
+  background-color: #e5e5f7;
+  opacity: 1;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--accent-background),
+    var(--accent-background) 2px,
+    var(--background) 2px,
+    var(--background) 10px
+  );
+}
+
+.texture-diagonal-2 {
+  background-color: #e5e5f7;
+  opacity: 1;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--accent-background),
+    var(--accent-background) 2px,
+    var(--background) 2px,
+    var(--background) 10px
+  );
+}
+
+/* background-color: #e5e5f7;
+opacity: 0.1;
+background: repeating-linear-gradient(
+  45deg,
+  #444cf7,
+  #444cf7 2px,
+  #e5e5f7 2px,
+  #e5e5f7 10px
+); */
