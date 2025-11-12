@@ -1,6 +1,6 @@
 type MobileNavbarProps = {
-  isMenuOpen: boolean;
-  onClick: () => void;
+  isMenuOpen?: boolean;
+  onClick?: () => void;
 };
 
 const MobileNavbar = ({ isMenuOpen, onClick }: MobileNavbarProps) => {
