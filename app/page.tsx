@@ -28,7 +28,7 @@ export default function Home() {
     <div className='h-screen flex flex-col overflow-hidden p-2'>
       <MobileNavbar isMenuOpen={isMenuOpen} onClick={handleMenuClick} />
       {isMenuOpen ? (
-        <MobileMenu />
+        <MobileMenu closeMenu={() => setIsMenuOpen(false)} />
       ) : (
         <div className='border p-2 overflow-auto flex flex-col flex-1 items-stretch'>
           <h1 className='text-2xl font-bold mb-2'>Homepage</h1>
