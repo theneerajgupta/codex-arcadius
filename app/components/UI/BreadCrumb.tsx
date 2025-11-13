@@ -7,7 +7,10 @@ const BreadCrumb = () => {
   return (
     <div className='hidden md:flex flex-row border-2 p-2 gap-2'>
       {pathArray.map((route, index) => (
-        <div key={index}>/ {route}</div>
+        <div key={index}>
+          <span className='px-2'>/</span>
+          {route}
+        </div>
       ))}
     </div>
   );
