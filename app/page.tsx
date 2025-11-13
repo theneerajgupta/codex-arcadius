@@ -4,21 +4,10 @@ import MobileMenu from '@/components/mobile/MobileMenu';
 
 import { useEffect, useState } from 'react';
 
-import ResponsiveLayout from '@/components/ResponsiveLayout';
+import ResponsiveLayout from '@/app/components/UI/ResponsiveLayout';
 
 export default function Home() {
-  return (
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-      necessitatibus amet quidem aut officiis voluptatum iusto nostrum. Minus
-      odio amet quae! Rem iure tempore at qui? Maiores sed nulla cumque.
-      Recusandae, voluptate alias veniam quis labore vel rerum quidem nobis
-      dicta cumque itaque consectetur dolorum voluptates quasi ipsam quia
-      voluptatem. Adipisci expedita corporis vero distinctio cumque dolore
-      excepturi nisi. Libero ipsa hic eius quasi odit eaque culpa, ut voluptatem
-      amet?
-    </div>
-  );
+  return <ResponsiveLayout />;
 }
 
 // export default function Home() {

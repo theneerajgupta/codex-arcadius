@@ -4,7 +4,7 @@ import { MonoFont } from '../styles/font';
 import '@/styles/globals.css';
 import 'remixicon/fonts/remixicon.css';
 
-import ResponsiveLayout from '@/components/ResponsiveLayout';
+import ResponsiveLayout from '@/app/components/UI/ResponsiveLayout';
 
 export default function RootLayout({
   children,
@@ -22,9 +22,7 @@ export default function RootLayout({
         />
       </head>
 
-      <body className={`${MonoFont.className} antialiased`}>
-        <ResponsiveLayout>{children}</ResponsiveLayout>
-      </body>
+      <body className={`${MonoFont.className} antialiased`}>{children}</body>
     </html>
   );
 }
