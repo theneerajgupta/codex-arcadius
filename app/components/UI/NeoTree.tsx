@@ -16,22 +16,23 @@
 */
 
 type NeoTreeProps = {
-  items: {
-    title: string;
-    path: string;
-  }[];
-  activeIndex: number;
+  routes: string[];
 };
 
-const NeoTree = () => {
+const NeoTree = ({ routes }: NeoTreeProps) => {
   return (
     <div className='border-2 p-2 hidden md:flex flex-1 flex-col gap-1'>
-      <div className='p-1 '>..</div>
+      {/* <div className='p-1 '>..</div>
       <div className='p-1 bg-zinc-300 text-black flex border'>about me</div>
       <div className='p-1 '>case studies</div>
       <div className='p-1 '>projects</div>
       <div className='p-1 '>tools</div>
-      <div className='p-1 '>blog</div>
+      <div className='p-1 '>blog</div> */}
+      {routes.map((label, index) => (
+        <div className='p-1' key={index}>
+          {label}
+        </div>
+      ))}
     </div>
   );
 };
