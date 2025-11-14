@@ -41,7 +41,7 @@ const ResponsiveLayoutClient = ({ RouteItems }: ResponsiveLayoutClientProp) => {
         <Header menuState={isMenuOpen} onClick={handleMenuToggle} />
         <BreadCrumb />
         <TitleBar title={pageName} isMenuOpen={isMenuOpen} />
-        <NeoTree />
+        <NeoTree routeItems={RouteItems} />
       </div>
       {isMenuOpen ? <MenuPane /> : <ViewPane />}
     </div>

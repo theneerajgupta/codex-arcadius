@@ -1,6 +1,6 @@
 type NeoTreeItemProps = {
   label: string;
-  type: 'route' | 'file';
+  type: 'route' | 'file' | 'directory';
   isActive: boolean;
 };
 
@@ -21,7 +21,7 @@ const NeoTreeItem = ({ label, type, isActive }: NeoTreeItemProps) => {
   }
   return (
     <div
-      className={`p-1 hover:bg-white hover:text-black hover:font-bold uppercase tracking-wide ${
+      className={`p-1 hover:bg-red-400 hover:text-black hover:font-bold uppercase tracking-wide ${
         isActive ? 'bg-white font-bold' : ''
       }`}
     >
