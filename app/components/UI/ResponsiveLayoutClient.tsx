@@ -38,11 +38,9 @@ import TitleBar from './TitleBar';
  *
  */
 
-type ResponsiveLayoutClientProp = {
-  routes: string[];
-};
+type ResponsiveLayoutClientProp = {};
 
-const ResponsiveLayoutClient = ({ routes }: ResponsiveLayoutClientProp) => {
+const ResponsiveLayoutClient = ({}: ResponsiveLayoutClientProp) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuToggle = () => setIsMenuOpen((prev) => !prev);
@@ -68,7 +66,7 @@ const ResponsiveLayoutClient = ({ routes }: ResponsiveLayoutClientProp) => {
         <Header menuState={isMenuOpen} onClick={handleMenuToggle} />
         <BreadCrumb />
         <TitleBar title={pageName} isMenuOpen={isMenuOpen} />
-        <NeoTree routes={routes} />
+        <NeoTree />
       </div>
       {isMenuOpen ? <MenuPane /> : <ViewPane />}
     </div>

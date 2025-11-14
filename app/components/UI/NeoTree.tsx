@@ -2,11 +2,9 @@
 import NeoTreeItem from '../Navigation/NeoTreeItem';
 import { useRouter } from 'next/navigation';
 
-type NeoTreeProps = {
-  routes: string[];
-};
+type NeoTreeProps = {};
 
-const NeoTree = ({ routes }: NeoTreeProps) => {
+const NeoTree = ({}: NeoTreeProps) => {
   const router = useRouter();
 
   const handleClick = (label: string) => {
@@ -18,12 +16,20 @@ const NeoTree = ({ routes }: NeoTreeProps) => {
   };
 
   return (
-    <div className='border-2 p-2 hidden md:flex flex-1 flex-col gap-1'>
-      {routes.map((label, index) => (
+    <div className='border-2 p-2 hidden md:flex flex-1 flex-col'>
+      <NeoTreeItem label='about me' type='route' isActive={true} />
+      <NeoTreeItem label='case-studies' type='route' isActive={false} />
+      <NeoTreeItem label='community-projects' type='route' isActive={false} />
+      <NeoTreeItem label='projects' type='route' isActive={false} />
+      <NeoTreeItem label='blogs' type='route' isActive={false} />
+      <NeoTreeItem label='cookbook.pdf' type='file' isActive={false} />
+      <NeoTreeItem label='resume.pdf' type='file' isActive={false} />
+
+      {/* {routes.map((label, index) => (
         <button onClick={() => handleClick(label)} key={index}>
           <NeoTreeItem label={label} type='route' />
         </button>
-      ))}
+      ))} */}
     </div>
   );
 };

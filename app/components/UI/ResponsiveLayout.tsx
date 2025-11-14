@@ -25,7 +25,7 @@ type RouteContent = {
 };
 
 async function ResponsiveLayout({ routes }: ResponsiveLayoutProp) {
-  return <ResponsiveLayoutClient routes={routes} />;
+  return <ResponsiveLayoutClient />;
 }
 
 export default ResponsiveLayout;
