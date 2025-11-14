@@ -4,9 +4,8 @@ import ResponsiveLayout from '@/components/UI/ResponsiveLayout';
 
 export default async function Projects() {
   // You can also pass dynamic data here if you want later
-  const routePath = getRoutePath(import.meta.url);
+  // const routePath = getRoutePath(import.meta.url);
+  // const routeList = getAvailableRoutes();
 
-  const routeList = getAvailableRoutes();
-
-  return <ResponsiveLayout routes={routeList} />;
+  return <ResponsiveLayout />;
 }

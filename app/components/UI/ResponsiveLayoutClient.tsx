@@ -9,35 +9,6 @@ import NeoTree from './NeoTree';
 import ViewPane from './ViewPane';
 import TitleBar from './TitleBar';
 
-/**
- * so lets say i am starting to build the navigation system
- * this will deeply link the NeoTree with the ViewPane
- *
- * so we need split responsibilities and create requirement list
- *
- * item-definition
- * -------------------------------------------------------------
- * - item type
- *    - [ folder                   ]
- *    - < tool / component />
- *    - something.md/pdf/jpg/x
- * - item name
- * - item path
- * - item preview
- * - item object - component / file
- *
- * neo-tree
- * -------------------------------------------------------------
- * - list of items (array of objects)
- * - current highlighted
- *
- * view-pane
- * -------------------------------------------------------------
- * - item type
- *
- *
- */
-
 type ResponsiveLayoutClientProp = {};
 
 const ResponsiveLayoutClient = ({}: ResponsiveLayoutClientProp) => {

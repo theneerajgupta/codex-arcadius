@@ -1,8 +1,6 @@
 import ResponsiveLayoutClient from './ResponsiveLayoutClient';
 
-type ResponsiveLayoutProp = {
-  routes: string[];
-};
+type ResponsiveLayoutProp = {};
 
 type RouteItem = {
   name: string;
@@ -24,7 +22,7 @@ type RouteContent = {
   items: RouteItem[];
 };
 
-async function ResponsiveLayout({ routes }: ResponsiveLayoutProp) {
+async function ResponsiveLayout({}: ResponsiveLayoutProp) {
   return <ResponsiveLayoutClient />;
 }
 
