@@ -4,7 +4,7 @@ import { MonoFont } from '@/styles/font';
 import '@/styles/globals.css';
 import 'remixicon/fonts/remixicon.css';
 
-import ResponsiveLayout from '@/app/components/UI/ResponsiveLayoutClient';
+import ResponsiveLayout from '@/components/UI/ResponsiveLayoutClient';
 
 export default function RootLayout({
   children,

@@ -1,6 +1,6 @@
-import { getRoutePath } from '@/app/lib/getRoutePath';
-import { getAvailableRoutes } from '@/app/lib/getAvailableRoutes';
-import ResponsiveLayout from '@/app/components/UI/ResponsiveLayout';
+import { getRoutePath } from '@/lib/getRoutePath';
+import { getAvailableRoutes } from '@/lib/getAvailableRoutes';
+import ResponsiveLayout from '@/components/UI/ResponsiveLayout';
 
 export default async function Projects() {
   // You can also pass dynamic data here if you want later
