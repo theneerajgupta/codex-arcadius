@@ -9,9 +9,13 @@ import NeoTree from './NeoTree';
 import ViewPane from './ViewPane';
 import TitleBar from './TitleBar';
 
-type ResponsiveLayoutClientProp = {};
+import type { RouteItem } from '../../lib/getRouteItems';
 
-const ResponsiveLayoutClient = ({}: ResponsiveLayoutClientProp) => {
+type ResponsiveLayoutClientProp = {
+  RouteItems: RouteItem[];
+};
+
+const ResponsiveLayoutClient = ({ RouteItems }: ResponsiveLayoutClientProp) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuToggle = () => setIsMenuOpen((prev) => !prev);

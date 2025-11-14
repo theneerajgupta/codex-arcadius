@@ -1,9 +1,13 @@
 import ResponsiveLayoutClient from './ResponsiveLayoutClient';
 
-type ResponsiveLayoutProp = {};
+import type { RouteItem } from '../../lib/getRouteItems';
 
-async function ResponsiveLayout({}: ResponsiveLayoutProp) {
-  return <ResponsiveLayoutClient />;
+type ResponsiveLayoutProp = {
+  RouteItems: RouteItem[];
+};
+
+async function ResponsiveLayout({ RouteItems }: ResponsiveLayoutProp) {
+  return <ResponsiveLayoutClient RouteItems={RouteItems} />;
 }
 
 export default ResponsiveLayout;

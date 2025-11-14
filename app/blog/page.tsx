@@ -1,11 +1,7 @@
-import { getRoutePath } from '@/lib/old/getRoutePath';
-import { getAvailableRoutes } from '@/lib/old/getAvailableRoutes';
 import ResponsiveLayout from '@/components/UI/ResponsiveLayout';
+import getRouteItems from '@/lib/getRouteItems';
 
 export default async function Blog() {
-  // You can also pass dynamic data here if you want later
-  // const routePath = getRoutePath(import.meta.url);
-  // const routeList = getAvailableRoutes();
-
-  return <ResponsiveLayout />;
+  const RouteItems = getRouteItems('/blog');
+  return <ResponsiveLayout RouteItems={RouteItems} />;
 }
